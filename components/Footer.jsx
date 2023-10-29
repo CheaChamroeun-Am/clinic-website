@@ -5,7 +5,7 @@ import { FiFacebook, FiSend, FiInstagram } from "react-icons/fi";
 const Footer = () => {
   return (
     <div
-      className="mt-32 bg-main text-white p-5 items-center flex flex-col justify-center
+      className="mt-32 bg-main text-white p-5 py-10 items-center flex flex-col justify-center
     "
     >
       <div className="flex flex-col items-center">

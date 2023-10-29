@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { HiOutlineShieldCheck } from "react-icons/hi";
+import Button from "../../../components/Button";
 
 const cards = [
   {
@@ -39,7 +40,7 @@ const Gastrointestinal = () => {
   return (
     <div>
       <div className="main-section">
-        <div className="flex gap-3 text-[14px] text-gray-500">
+        <div className="flex gap-3 text-[13px] text-gray-500">
           <Link href="/" className="underline">
             Home
           </Link>
@@ -118,9 +119,7 @@ const Gastrointestinal = () => {
               is an abnormality in the large intestine, a colonoscopy can be
               performed.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>Make an Appointment</span>
-            </button>
+            <Button title="Make an Appointment" className="mt-5" />
           </div>
           <div className="order-first lg:order-last flex">
             <img
@@ -210,9 +209,7 @@ const Gastrointestinal = () => {
             examination, so we recommend that you make a reservation below.
           </p>
           <div className="mt-10 flex justify-center">
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-              <span>Book Appointment</span>
-            </button>
+            <Button title="Book an Appointment" className="mt-5" />
           </div>
         </div>
       </div>

@@ -8,12 +8,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center px-2 md:px-2 py-4 shadow-lg">
       <Link href="/">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={300}
-          height={50}
-        />
+        <Image src="/logo.png" alt="logo" width={300} height={50} />
       </Link>
       <div>
         <ul className="flex">
@@ -27,24 +22,24 @@ const Navbar = () => {
             Menu
             <ul className="absolute z-20 hidden mt-2 bg-[#edf2fa] shadow-lg group-hover:block text-center -left-10 -right-10">
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/menu/firstTimeUser">
+                <Link href="/menu#ForFirstTimeUser">
                   <span className="block h-full w-full">
                     For first time users
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/menu#InternalMedicine">
                   <span className="block h-full w-full">Internal medicine</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/menu#Gastroenterology">
                   <span className="block h-full w-full">Gastroenterology</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/menu#Endoscopy">
                   <span className="block h-full w-full">
                     Endoscopy internal medicine
                   </span>
@@ -64,38 +59,38 @@ const Navbar = () => {
             Gastroscope
             <ul className="absolute z-20 hidden mt-2 bg-[#edf2fa] shadow-lg group-hover:block text-center -left-10 -right-10">
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope">
                   <span className="block h-full w-full">
                     Gastrocamera at our hospital
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope#CustomizedEndoscopy">
                   <span className="block h-full w-full">
                     Customized endoscopy
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope#CharacteristicsHospital">
                   <span className="block h-full w-full">
                     Characteristics of our hospital
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope#TestFlow">
                   <span className="block h-full w-full">Test flow</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope#CostTesting">
                   <span className="block h-full w-full">Cost of testing</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/gastroscope/manga-gastrocamera">
                   <span className="block h-full w-full">
                     Learn from manga! Gastrocamera examination
                   </span>
@@ -108,52 +103,52 @@ const Navbar = () => {
             Colonscope
             <ul className="absolute z-20 hidden mt-2 bg-[#edf2fa] shadow-lg group-hover:block text-center -left-10 -right-10">
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope">
                   <span className="block h-full w-full">
                     Colon camera at our hospital
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope#CustomizedEndoscopy">
                   <span className="block h-full w-full">
                     Customized endoscopy
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope#CharacteristicsHospital">
                   <span className="block h-full w-full">
                     Characteristics of our hospital
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope#TestFlow">
                   <span className="block h-full w-full">Test flow</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope#CostTesting">
                   <span className="block h-full w-full">Cost of testing</span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope/colon-polyp-removal">
                   <span className="block h-full w-full">
                     Colon polyp removal
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope/dietary-precautions">
                   <span className="block h-full w-full">
                     Dietary precautions for colonoscopy
                   </span>
                 </Link>
               </li>
               <li className="px-4 py-2 border-t-2 hover:bg-main  border-main text-black hover:text-white">
-                <Link href="/clinic">
+                <Link href="/colonscope/manga-caloncamera">
                   <span className="block h-full w-full">
                     Learn from manga! Colon camera examination
                   </span>

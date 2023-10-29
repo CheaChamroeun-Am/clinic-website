@@ -1,6 +1,8 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
 
+import Button from "./Button";
+
 const Appointment = () => {
   return (
     <div className="section">
@@ -60,10 +62,7 @@ const Appointment = () => {
         </div>
 
         <div className="col-span-1 md:col-span-2 mx-auto">
-          <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-            <span>Submit</span>
-            <FiSend size={20} />
-          </button>
+          <Button icon={FiSend} title="Submit" iconPosition="after" />
         </div>
       </div>
     </div>

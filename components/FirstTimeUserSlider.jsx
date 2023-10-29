@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import Button from "./Button";
 
 const items = [
   {
@@ -34,7 +35,6 @@ const items = [
     description:
       "The doctor will conduct an examination. Perform visual inspection, auscultation, palpation, etc. as necessary.",
   },
-  // ... (other items)
 ];
 
 const FirstTimeUserSlider = () => {
@@ -68,9 +68,7 @@ const FirstTimeUserSlider = () => {
               <p className="text-center mt-3">{item.description}</p>
               {item.button && (
                 <div>
-                  <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-3">
-                    <span>Fill Form</span>
-                  </button>
+                  <Button title="Fill Form" className="mt-5" />
                 </div>
               )}
             </div>

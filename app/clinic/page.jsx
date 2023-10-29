@@ -6,15 +6,22 @@ import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 import { useState } from "react";
 import { useEffect } from "react";
 import FirstTimeUserSlider from "../../components/FirstTimeUserSlider";
+import ColonCameraSlider from "../../components/CalonCameraSlider";
+import Button from "../../components/Button";
+import { FaUserDoctor } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+// HiShieldCheck
 
 const Clinic = () => {
   return (
     <div>
-      <FirstTimeUserSlider />
+      <ColonCameraSlider />
+
+      {/* <FirstTimeUserSlider /> */}
 
       <div className="section">
         <div>
-          <div className="flex justify-center md:float-left md:mr-10">
+          <div className="flex justify-center md:float-right md:ml-10">
             <img
               src="examGastrocamera.png"
               alt="endoscope"
@@ -23,7 +30,7 @@ const Clinic = () => {
           </div>
         </div>
         <div>
-          <h2>Information on Endoscopy</h2>
+          <h2 className="mt-5 md:mt-0">Same-day colon polyp removal</h2>
           <p className="mt-5">
             We provide endoscopic examinations that will make you feel glad that
             you had the examination here and that you would like to have the
@@ -47,9 +54,19 @@ const Clinic = () => {
       </div>
 
       {/* Button */}
-      {/* <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-        <span>Book Appointment</span>
-      </button> */}
+      <Button title="Read More" className="mt-5" />
+
+      <Button icon={FaUserDoctor} title="Find Doctor" />
+
+      {/* <Button
+        title="Button without Icon"
+        onClick={handleClick}
+      /> */}
+
+      <div className="flex justify-center">
+        <Button icon={FaUserDoctor} title="Find Doctor" />
+        <Button icon={FaArrowRight} title="Next" iconPosition="after" />
+      </div>
 
       {/* bg main gray */}
       {/* <div className="bg-main-gray mt-10">
@@ -57,7 +74,6 @@ const Clinic = () => {
           <h2 className="text-center">Are you having trouble with the following?</h2>
         </div>
       </div> */}
-      
     </div>
   );
 };

@@ -11,6 +11,7 @@ import Appointment from "../components/Appointment";
 import GastrocameraSliding from "../components/GastrocameraSliding";
 import Link from "next/link";
 import { blogs, sliders } from "../data/data.js";
+import Button from "../components/Button";
 
 export default function Home() {
   const [showAllBlogs, setShowAllBlogs] = useState(false);
@@ -43,18 +44,9 @@ export default function Home() {
       </div>
 
       <div className="section flex flex-wrap gap-10 items-center justify-center">
-        <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-          <FaUserDoctor size={20} />
-          <span>Find Doctor</span>
-        </button>
-        <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-          <IoLocationOutline size={20} />
-          <span>Find Location</span>
-        </button>
-        <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center">
-          <BiCalendar size={20} />
-          <span>Book Appointment</span>
-        </button>
+        <Button icon={FaUserDoctor} title="Find Doctor" />
+        <Button icon={IoLocationOutline} title="Find Location" />
+        <Button icon={BiCalendar} title="Book Appointment" />
       </div>
 
       <div className="section">
@@ -86,8 +78,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-[20vh] bg-main-gray mt-20">
-        <AutoSlide />
+      <div className=" bg-main-gray mt-20">
+        <div className="p-5">
+          <AutoSlide />
+        </div>
       </div>
 
       <div className="section gap-10 grid grid-cols-1 md:grid-cols-2 items-center">
@@ -116,9 +110,7 @@ export default function Home() {
             you get tested to protect your health. If you would like to undergo
             an endoscopy in Nerima Ward, please contact our hospital.
           </p>
-          <button className="bg-main text-white rounded-md px-4 py-2 gap-3  mt-5">
-            <span>Read More</span>
-          </button>
+          <Button title="Read More" className="mt-5" />
         </div>
       </div>
 
@@ -218,7 +210,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       {/* Feature */}
       <div className="section">
         <h2 className="text-center">Features of our hospital</h2>
@@ -233,9 +225,7 @@ export default function Home() {
               system to provide advanced endoscopic examinations at a clinic in
               town.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
           <div className="order-first lg:order-last flex">
             <img
@@ -259,9 +249,7 @@ export default function Home() {
               home, we have a space in the hospital where you can take
               laxatives. Please feel free to contact us.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
         </div>
 
@@ -272,9 +260,7 @@ export default function Home() {
               Our hospital has introduced Olympus' state-of-the-art endoscope
               system "EVIS X1". We provide quick and accurate inspections.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
           <div className="order-first lg:order-last ">
             <img
@@ -299,9 +285,7 @@ export default function Home() {
               asleep. Recommended for first-time patients and those who are not
               comfortable with endoscopy.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
         </div>
 
@@ -314,9 +298,7 @@ export default function Home() {
               spot in an effort to prevent colon cancer. It is a day surgery
               that does not require hospitalization.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
           <div className="order-first lg:order-last">
             <img
@@ -342,9 +324,7 @@ export default function Home() {
               system to provide advanced endoscopic examinations at a clinic in
               town.
             </p>
-            <button className="bg-main text-white rounded-md px-4 py-2 flex gap-3 items-center mt-5">
-              <span>More Details</span>
-            </button>
+            <Button title="More Details" className="mt-5" />
           </div>
         </div>
       </div>

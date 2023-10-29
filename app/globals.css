@@ -1,8 +1,18 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.ReactCollapse--collapse {
+    transition: height 500ms;
+}
+
+
 @layer base {
+    html {
+        @apply scroll-smooth
+    }
+
     .main-section {
         @apply container mx-auto px-6 mt-10 
     }
@@ -29,6 +39,14 @@
 
     h3 {
         @apply text-xl md:text-2xl font-bold 
+    }
+
+    h4 {
+        @apply text-lg md:text-xl font-bold 
+    }
+
+    h5 {
+        @apply text-base md:text-lg font-bold 
     }
 
     p {

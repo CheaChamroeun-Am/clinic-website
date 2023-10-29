@@ -30,7 +30,7 @@ const AutoSlide = () => {
 
   return (
     <div className="overflow-hidden bg-main-gray-100 mx-5">
-      <div ref={scrollRef} className="whitespace-nowrap mt-5">
+      <div ref={scrollRef} className="whitespace-nowrap ">
         {logos.map((logo, idx) => (
           <img
             key={idx}
